@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de produtos</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
+        </div>
+        <div class="card">
+            <div class="line-input">
+                <label for="product">Produto</label>
+                <input type="text" id="product" placeholder="Nome do produto">
+            </div>
+
+            <div class="line-input">
+                <label id="price">Preço</label>
+                <input type="text" id="price" placeholder="Valor do produto">
+            </div>
+
+            <button onclick="produto.add()">Adicionar</button>
+            <button onclick="produto.reset()">Limpar</button>
+
+
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
