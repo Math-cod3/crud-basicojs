@@ -73,6 +73,7 @@ class Product {
 
 
              del.src = 'img/delete.svg'
+             del.setAttribute('onclick', 'produto.delItem('+ this.stack[i].id + ')')
              edit.src = 'img/edit.svg'
 
              td_actions.classList.add('separate')
@@ -81,6 +82,19 @@ class Product {
              td_actions.appendChild(del)
              
         }
+    }
+
+    delItem(id){
+        let tbody = document.getElementById('tbody')
+
+        for(let i = 0; i < this.stack.length; i++){
+            if(id == this.stack[i].id){
+                this.stack.splice(i, 1)
+                tbody.deleteRow(i)
+            }
+        }
+        // tbody.removeChild(tbody.children[id])
+
     }
 }
 

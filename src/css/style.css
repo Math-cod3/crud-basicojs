@@ -26,6 +26,10 @@ main{
     margin-top: 15px;
     border-radius: 5px;
 }
+
+img{
+    cursor: pointer;
+}
 .line-input{
     color: #111;
     display: grid;
