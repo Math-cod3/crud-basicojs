@@ -17,6 +17,7 @@ header{
 }
 main{
     padding: 30px 50px;
+    color: #111;
 }
 .card{
     background-color: #fff;
@@ -26,8 +27,13 @@ main{
     border-radius: 5px;
 }
 .line-input{
+    color: #111;
     display: grid;
     margin-bottom: 10px;
+}
+.separate{
+    justify-content: space-evenly;
+    display: flex;
 }
 
 input{
@@ -42,12 +48,36 @@ button{
     outline: 0;
     background-color: blueviolet;
     color: #fff;
+    text-transform: uppercase;
     border-radius: 3px;
     font-weight: bold;
     transition: .5s ease-in-out;
     cursor: pointer;
+    margin-bottom: 10px;;
 }
 button:hover{
     background-color: rgb(102, 44, 156);
     transition: .5s ease-in-out;
+}
+.content{
+    margin-top: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: #111;
+
+}
+table th{
+    background-color: rgb(214, 214, 214);
+    padding: 1px 5px;
+}
+table td img{
+    width: 22px;
+    align-items: center;
+}
+.center{
+    text-align: center;
 }
